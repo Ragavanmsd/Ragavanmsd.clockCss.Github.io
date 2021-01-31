@@ -1,0 +1,46 @@
+html{
+    background-image: url(../image/download.jfif);
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+body{
+    
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+
+}
+.clock {
+    box-shadow: none;
+    border: 13px solid white;
+    border-radius: 70%;
+    padding: 2rem;
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    margin: 50px auto;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+.hand{
+    transform: rotate(90deg);
+    top: 50%;
+    height: 5px;
+    width: 50%;
+    background: black;
+    position: absolute;
+    transform-origin: 100%;
+    transition: all 0.05s;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.11, 2.49, 0.58, 1);
+}
